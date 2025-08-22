@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #ededed;
+}
+.nav {
+  height: 75px;
+  background-color: #003366;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+.nav-list .navs {
+  padding-top: 15px;
+}
+.nav-list li {
+  font-family: "Saira Condensed", sans-serif;
+}
+.line {
+  font-size: 48px;
+  line-height: 100%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.nav-list1 {
+  display: flex;
+  gap: 10px;
+}
+.nav-list1 img {
+  margin-top: 5px;
+}
+.button {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 20px;
+}
+.hero-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.hero-text1 {
+  display: flex;
+  font-family: "Saira Condensed", sans-serif;
+}
+.hero-text2 {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-family: "Saira Condensed", sans-serif;
+}
+.ERL {
+  font-size: 50px;
+  color: #ff7a00;
+}
+.logistics {
+  font-size: 25px;
+  padding-top: 20px;
+  color: #003366;
+}
+.btn {
+  height: 50px;
+  width: 120px;
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 800;
+}
+.hero-image {
+  height: 800px;
+  width: 100%;
+  background-image: url(./Images/About-hero-image.png);
+}
+.hero-image p {
+  color: white;
+  text-align: center;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 64px;
+  padding-top: 500px;
+  padding-left: 90px;
+}
+.vision {
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.vision-text {
+  padding-left: 150px;
+  padding-top: 40px;
+}
+.vision-text1 {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: justify;
+  color: #ff7a00;
+}
+.vision-text2 {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: justify;
+}
+.vision img {
+  padding-bottom: 10px;
+}
+.delivery {
+  height: 681px;
+  width: 100%;
+  background-image: url(./Images/Delivery-image.png);
+}
+.delivery-text {
+  color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 285px;
+  padding-left: 250px;
+}
+.play-icon {
+  padding-left: 650px;
+}
+.mission {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+.mission-1 {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: justify;
+  color: #ff7a00;
+  padding-top: 50px;
+}
+.mission-2 {
+  max-width: 350px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+}
+.mission-image{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer {
+  height: 600px;
+  background-color: black;
+  margin-bottom: 25px;
+}
+.footer1 {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 90px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 50px;
+}
+.hr-tag {
+  margin-top: 50px;
+  width: 100%;
+}
+.line-1 {
+  font-size: 60px;
+  line-height: 100%;
+}
+.footer-text {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+.ERL1 {
+  font-size: 55px;
+  color: #ff7a00;
+  padding-top: 10px;
+}
+.logistics1 {
+  font-size: 30px;
+  padding-top: 30px;
+  color: #003366;
+}
+ul {
+  list-style: none;
+}
+.footer-text1 img {
+  padding-top: 75px;
+}
+.footer-text2 {
+  padding-top: 40px;
+  line-height: 30px;
+}
+.text {
+  font-family: Saira Condensed;
+  font-weight: 700;
+  font-size: 25px;
+}
+.text1 {
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+}
+.hr-tag1 {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-button {
+  background-color: #a0a0a0;
+ color: white;
+  border: none;
+  width: 200px;
+  height: 38px;
+  display: flex;
+  gap: 90px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+}
+.footer-bottom {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+  padding-right: 20px;
+}
+.footer-bottom p {
+  padding-top: 30px;
+}
+.line-2 {
+  font-size: 60px;
+  line-height: 150%;
+}
+

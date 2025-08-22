@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #ededed;
+}
+.nav {
+  height: 75px;
+  background-color: #003366;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+.nav-list .navs {
+  padding-top: 15px;
+}
+.nav-list li {
+  font-family: "Saira Condensed", sans-serif;
+}
+.line {
+  font-size: 48px;
+  line-height: 100%;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.nav-list1 {
+  display: flex;
+  gap: 10px;
+}
+.nav-list1 img {
+  margin-top: 5px;
+}
+.button {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 20px;
+}
+.hero-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.hero-text1 {
+  display: flex;
+  font-family: "Saira Condensed", sans-serif;
+}
+.hero-text2 {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-family: "Saira Condensed", sans-serif;
+}
+.hero-text2 a {
+  text-decoration: none;
+  color: black;
+}
+.hero-text-li a:hover,
+.hero-text-li a:active {
+  color: #ff7a00;
+}
+.ERL {
+  font-size: 50px;
+  color: #ff7a00;
+}
+.logistics {
+  font-size: 25px;
+  padding-top: 20px;
+  color: #003366;
+}
+.btn {
+  height: 50px;
+  width: 120px;
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 800;
+}
+.hero-image {
+  height: 800px;
+  background-image: url(./Images/Hero-Image.webp);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.main-hero {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 170px;
+  padding-left: 40px;
+}
+.main-hero1 {
+  color: white;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.main-hero2 {
+  display: flex;
+}
+.main-hero2 p {
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 32px;
+}
+.main-hero2 img {
+  margin-top: 47px;
+}
+.main-hero3 {
+  padding-top: 70px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 32px;
+}
+.btn-1 {
+  background: #ff7a00;
+  border: none;
+  color: white;
+  width: 8%;
+  height: 50px;
+  border-radius: 0.5rem;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about1 {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+}
+.about-text {
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: justify;
+}
+.strength-image {
+  height: 800px;
+  background-image: url(./Images/Strength\ image.webp);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.strength-text {
+  color: #ff7a00;
+  font-size: 2rem;
+  padding-top: 120px;
+  padding-left: 60px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 50px;
+}
+.strength-text1 {
+  padding-left: 60px;
+  font-family: Saira Condensed;
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+  padding-top: 30px;
+}
+.strength-text2 {
+  padding-left: 60px;
+  color: white;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 32px;
+}
+.strength-text3 {
+  padding-left: 60px;
+  color: white;
+}
+.btn-2 {
+  background-color: #ff7a00;
+  height: 70px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 40px;
+}
+.main-service {
+  height: 750px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.service {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  color: #003366;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.s-text {
+  font-size: 40px;
+}
+.service1 {
+  display: flex;
+  justify-content: space-around;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 24px;
+}
+.service2 {
+  display: flex;
+  padding-left: 280px;
+  padding-top: 40px;
+  gap: 54px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 24px;
+}
+.s-logo {
+  padding-left: 100px;
+}
+.footer {
+  height: 600px;
+  background-color: black;
+  margin-bottom: 25px;
+}
+.footer1 {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 90px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 50px;
+}
+.hr-tag {
+  margin-top: 50px;
+  width: 100%;
+}
+.line-1 {
+  font-size: 60px;
+  line-height: 100%;
+}
+.footer-text {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+.ERL1 {
+  font-size: 55px;
+  color: #ff7a00;
+  padding-top: 10px;
+}
+.logistics1 {
+  font-size: 30px;
+  padding-top: 30px;
+  color: #003366;
+}
+ul {
+  list-style: none;
+}
+.footer-text1 img {
+  padding-top: 75px;
+}
+.footer-text2 {
+  padding-top: 40px;
+  line-height: 30px;
+}
+.text {
+  font-family: Saira Condensed;
+  font-weight: 700;
+  font-size: 25px;
+}
+.text1 {
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+}
+.hr-tag1 {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-button {
+  background-color: #a0a0a0;
+ color: white;
+  border: none;
+  width: 200px;
+  height: 38px;
+  display: flex;
+  gap: 90px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+}
+.footer-bottom {
+  color:  #A0A0A0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+  padding-right: 20px;
+}
+.footer-bottom p {
+  padding-top: 30px;
+}
+.line-2 {
+  font-size: 60px;
+  line-height: 150%;
+}
