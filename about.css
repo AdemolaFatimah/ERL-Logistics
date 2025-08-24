@@ -19,15 +19,11 @@ body {
   font-size: 17px;
   font-weight: 400;
 }
-.nav-list .navs {
-  padding-top: 15px;
+.hamburger-logo {
+  display: none;
 }
 .nav-list li {
   font-family: "Saira Condensed", sans-serif;
-}
-.line {
-  font-size: 48px;
-  line-height: 100%;
 }
 .nav-list {
   display: flex;
@@ -63,6 +59,18 @@ body {
   gap: 20px;
   font-family: "Saira Condensed", sans-serif;
 }
+.hero-text2 a {
+  text-decoration: none;
+  color: black;
+}
+.hero-text-li {
+  display: flex;
+  align-items: center;
+}
+.hero-text-li a:hover,
+.hero-text-li a:active {
+  color: #ff7a00;
+}
 .ERL {
   font-size: 50px;
   color: #ff7a00;
@@ -80,7 +88,9 @@ body {
   border: none;
   font-size: 17px;
   font-weight: 800;
+  border-radius: 0.5rem;
 }
+/* hero section */
 .hero-image {
   height: 800px;
   width: 100%;
@@ -95,6 +105,7 @@ body {
   padding-top: 500px;
   padding-left: 90px;
 }
+/* vision section */
 .vision {
   height: 350px;
   background-color: white;
@@ -122,6 +133,7 @@ body {
 .vision img {
   padding-bottom: 10px;
 }
+/* delivery section */
 .delivery {
   height: 681px;
   width: 100%;
@@ -138,6 +150,7 @@ body {
 .play-icon {
   padding-left: 650px;
 }
+/* mission section */
 .mission {
   display: flex;
   justify-content: space-between;
@@ -158,17 +171,22 @@ body {
   font-size: 20px;
   text-align: justify;
 }
-.mission-image{
-    padding-top: 30px;
-    padding-bottom: 30px;
+.mission-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+.mission-image1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* footer section */
 .footer {
   height: 600px;
   background-color: black;
   margin-bottom: 25px;
 }
 .footer1 {
-  color:  #A0A0A0;
+  color: #a0a0a0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -177,6 +195,9 @@ body {
   font-weight: 400;
   font-size: 20px;
   padding: 50px;
+}
+.footer-image {
+  padding-left: 22px;
 }
 .hr-tag {
   margin-top: 50px;
@@ -187,7 +208,7 @@ body {
   line-height: 100%;
 }
 .footer-text {
-  color:  #A0A0A0;
+  color: #a0a0a0;
   display: flex;
   justify-content: space-around;
   padding-bottom: 120px;
@@ -228,7 +249,7 @@ ul {
 }
 .footer-button {
   background-color: #a0a0a0;
- color: white;
+  color: white;
   border: none;
   width: 200px;
   height: 38px;
@@ -239,9 +260,11 @@ ul {
   font-family: Saira Condensed;
   font-weight: 500;
   font-size: 15px;
+  border: none;
+  border-radius: 0.3rem;
 }
 .footer-bottom {
-  color:  #A0A0A0;
+  color: #a0a0a0;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -249,12 +272,184 @@ ul {
   font-weight: 500;
   font-size: 15px;
   padding-right: 20px;
-}
-.footer-bottom p {
   padding-top: 30px;
 }
-.line-2 {
-  font-size: 60px;
-  line-height: 150%;
+.footer-bottom p {
+  padding-top: 5px;
 }
-
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ERL {
+    font-size: 50px;
+    color: #ff7a00;
+    padding-left: 20px;
+  }
+  .logistics {
+    font-size: 25px;
+    padding-top: 20px;
+    color: #003366;
+  }
+  .hero-text2 {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .hero-text1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hamburger-logo {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 110px;
+  }
+  /* vision section */
+  .vision {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .vision-text {
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .vision img {
+    width: 100%;
+  }
+  /* delivery section */
+  .delivery-text {
+    color: white;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 395px;
+    padding-left: 15px;
+  }
+  .play-icon {
+    padding-left: 150px;
+    height: 50px;
+  }
+  /* mission section */
+  .mission {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 900px;
+  }
+  .mission-1 {
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 60px;
+    text-align: justify;
+    color: #ff7a00;
+    padding-top: 40px;
+  }
+  .mission-2 {
+    max-width: 350px;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 40px;
+  }
+  .mission-image {
+    height: 450px;
+    width: 100%;
+  }
+  .mission-image1{
+ display: none;
+  }
+  /* footer section */
+  .footer1 {
+    color: #a0a0a0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0;
+  }
+  .footer1 p {
+    font-size: 15px;
+  }
+  .hr-tag {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .line-1 {
+    display: none;
+  }
+  .footer-text {
+    color: #a0a0a0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 90px;
+  }
+  .ERL1 {
+    font-size: 35px;
+    color: #ff7a00;
+    padding-top: 10px;
+  }
+  .logistics1 {
+    font-size: 15px;
+    padding-top: 30px;
+    color: #003366;
+  }
+  .footer-text1 img {
+    padding-top: 50px;
+  }
+  .footer-image {
+    height: 35px;
+  }
+  .footer-text2 {
+    padding-top: 40px;
+    line-height: 20px;
+  }
+  .text {
+    font-family: Saira Condensed;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .text1 {
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .hr-tag1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-button {
+    background-color: #a0a0a0;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    gap: 40px;
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 0.3rem;
+  }
+  .footer-bottom {
+    color: #a0a0a0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 15px;
+    padding-right: 20px;
+  }
+}

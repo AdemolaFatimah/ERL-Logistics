@@ -9,6 +9,7 @@ body {
   width: 100%;
   background-color: #ededed;
 }
+/* header  */
 .nav {
   height: 75px;
   background-color: #003366;
@@ -19,15 +20,11 @@ body {
   font-size: 17px;
   font-weight: 400;
 }
-.nav-list .navs {
-  padding-top: 15px;
+.hamburger-logo {
+  display: none;
 }
 .nav-list li {
   font-family: "Saira Condensed", sans-serif;
-}
-.line {
-  font-size: 48px;
-  line-height: 100%;
 }
 .nav-list {
   display: flex;
@@ -46,6 +43,7 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
+/* navigation */
 .hero-text {
   display: flex;
   justify-content: space-around;
@@ -66,6 +64,10 @@ body {
 .hero-text2 a {
   text-decoration: none;
   color: black;
+}
+.hero-text-li {
+  display: flex;
+  align-items: center;
 }
 .hero-text-li a:hover,
 .hero-text-li a:active {
@@ -88,7 +90,9 @@ body {
   border: none;
   font-size: 17px;
   font-weight: 800;
+  border-radius: 0.5rem;
 }
+/* hero-section */
 .hero-image {
   height: 800px;
   background-image: url(./Images/Hero-Image.webp);
@@ -138,6 +142,7 @@ body {
   margin-left: 40px;
   margin-top: 70px;
 }
+/* about section */
 .about {
   display: flex;
   justify-content: space-around;
@@ -160,6 +165,7 @@ body {
   line-height: 30px;
   text-align: justify;
 }
+/* strength section */
 .strength-image {
   height: 800px;
   background-image: url(./Images/Strength\ image.webp);
@@ -204,7 +210,9 @@ body {
   border-radius: 0.5rem;
   border: none;
   margin-top: 40px;
+  padding: 5px;
 }
+/* service section */
 .main-service {
   height: 750px;
   background-color: white;
@@ -230,26 +238,28 @@ body {
   font-family: Saira Condensed;
   font-weight: 400;
   font-size: 24px;
+  gap: 34px;
 }
 .service2 {
-  display: flex;
-  padding-left: 280px;
-  padding-top: 40px;
-  gap: 54px;
+ display: flex;
+  justify-content: space-around;
   font-family: Saira Condensed;
   font-weight: 400;
   font-size: 24px;
+  gap: 34px;
+  padding-left: 20px;
 }
 .s-logo {
   padding-left: 100px;
 }
+/* footer section */
 .footer {
   height: 600px;
   background-color: black;
   margin-bottom: 25px;
 }
 .footer1 {
-  color:  #A0A0A0;
+  color: #a0a0a0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -258,6 +268,9 @@ body {
   font-weight: 400;
   font-size: 20px;
   padding: 50px;
+}
+.footer-image{
+  padding-left: 22px;
 }
 .hr-tag {
   margin-top: 50px;
@@ -268,7 +281,7 @@ body {
   line-height: 100%;
 }
 .footer-text {
-  color:  #A0A0A0;
+  color: #a0a0a0;
   display: flex;
   justify-content: space-around;
   padding-bottom: 120px;
@@ -309,7 +322,7 @@ ul {
 }
 .footer-button {
   background-color: #a0a0a0;
- color: white;
+  color: white;
   border: none;
   width: 200px;
   height: 38px;
@@ -320,9 +333,296 @@ ul {
   font-family: Saira Condensed;
   font-weight: 500;
   font-size: 15px;
+  border: none;
+  border-radius: 0.3rem;
 }
 .footer-bottom {
-  color:  #A0A0A0;
+  color: #a0a0a0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 15px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+.footer-bottom p {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ERL {
+    font-size: 50px;
+    color: #ff7a00;
+    padding-left: 20px;
+  }
+  .logistics {
+    font-size: 25px;
+    padding-top: 20px;
+    color: #003366;
+  }
+  .hero-text2 {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .hero-text1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hamburger-logo {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 110px;
+  }
+  /* hero section */
+  .hero-image {
+    height: 450px;
+    background-image: url(./Images/Hero-Image.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .main-hero {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 80px;
+    padding-left: 20px;
+  }
+  .main-hero1 {
+    color: white;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .main-hero2 p {
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .main-hero2 img {
+    margin-top: 50px;
+    height: 50px;
+  }
+  .main-hero3 {
+    padding-top: 60px;
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .btn-1 {
+    background: #ff7a00;
+    border: none;
+    color: white;
+    width: 30%;
+    height: 50px;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  /* about section */
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about1 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+  .about-text {
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: justify;
+    padding-left: 10px;
+  }
+  .about-image {
+    width: 375px;
+    height: 400px;
+  }
+  /* strength section */
+  .main-service {
+  height: 950px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  .strength-image {
+    height: 400px;
+    background-image: url(./Images/Strength\ image.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 210px;
+  }
+  .strength-text {
+    color: #ff7a00;
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .strength-text1 {
+    padding-left: 20px;
+    font-family: Saira Condensed;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+  }
+  .strength-text2 {
+    padding-left: 20px;
+    color: white;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .strength-text3 {
+    padding-left: 20px;
+    color: white;
+  }
+  .btn-2 {
+    background-color: #ff7a00;
+    height: 40px;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 40px;
+    padding: 5px;
+  }
+  .btn-2 img {
+    width: 15px;
+  }
+  /* service section */
+  .service {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    color: #003366;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .s-text {
+    font-size: 20px;
+  }
+  .service1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+  .service2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+  .s-logo {
+    padding-left: 50px;
+    height: 25px;
+  }
+  /* footer section */
+.footer1 {
+  color: #a0a0a0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Saira Condensed;
+  font-weight: 400;
+  font-size: 10px;
+  padding: 0;
+}
+.footer1 p{
+  font-size: 15px;
+}
+.hr-tag {
+  margin-top: 50px;
+  width: 100%;
+}
+.line-1 {
+  display: none;
+}
+.footer-text {
+  color: #a0a0a0;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}
+.ERL1 {
+  font-size: 35px;
+  color: #ff7a00;
+  padding-top: 10px;
+}
+.logistics1 {
+  font-size: 15px;
+  padding-top: 30px;
+  color: #003366;
+}
+.footer-text1 img {
+  padding-top: 50px;
+}
+.footer-image{
+  height: 35px;
+}
+.footer-text2 {
+  padding-top: 40px;
+  line-height: 20px;
+}
+.text {
+  font-family: Saira Condensed;
+  font-weight: 700;
+  font-size: 18px;
+}
+.text1 {
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 10px;
+}
+.hr-tag1 {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-button {
+  background-color: #a0a0a0;
+  color: white;
+  border: none;
+  width: 110px;
+  height: 50px;
+  display: flex;
+  gap: 40px;
+  font-family: Saira Condensed;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 0.3rem;
+}
+.footer-bottom {
+  color: #a0a0a0;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -331,10 +631,4 @@ ul {
   font-size: 15px;
   padding-right: 20px;
 }
-.footer-bottom p {
-  padding-top: 30px;
-}
-.line-2 {
-  font-size: 60px;
-  line-height: 150%;
 }

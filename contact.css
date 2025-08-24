@@ -18,15 +18,11 @@ body {
   font-size: 17px;
   font-weight: 400;
 }
-.nav-list .navs {
-  padding-top: 15px;
+.hamburger-logo {
+  display: none;
 }
 .nav-list li {
   font-family: "Saira Condensed", sans-serif;
-}
-.line {
-  font-size: 48px;
-  line-height: 100%;
 }
 .nav-list {
   display: flex;
@@ -62,6 +58,18 @@ body {
   gap: 20px;
   font-family: "Saira Condensed", sans-serif;
 }
+.hero-text2 a {
+  text-decoration: none;
+  color: black;
+}
+.hero-text-li {
+  display: flex;
+  align-items: center;
+}
+.hero-text-li a:hover,
+.hero-text-li a:active {
+  color: #ff7a00;
+}
 .ERL {
   font-size: 50px;
   color: #ff7a00;
@@ -79,6 +87,7 @@ body {
   border: none;
   font-size: 17px;
   font-weight: 800;
+  border-radius: 0.5rem;
 }
 .contact-image {
   height: 800px;
@@ -133,6 +142,9 @@ body {
   font-weight: 400;
   font-size: 20px;
   padding: 50px;
+}
+.footer-image {
+  padding-left: 22px;
 }
 .hr-tag {
   margin-top: 50px;
@@ -195,6 +207,8 @@ ul {
   font-family: Saira Condensed;
   font-weight: 500;
   font-size: 15px;
+  border-radius: 0.3rem;
+  border: none;
 }
 .footer-bottom {
   color: #a0a0a0;
@@ -205,11 +219,168 @@ ul {
   font-weight: 500;
   font-size: 15px;
   padding-right: 20px;
-}
-.footer-bottom p {
   padding-top: 30px;
 }
-.line-2 {
-  font-size: 60px;
-  line-height: 150%;
+.footer-bottom p {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .hero-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ERL {
+    font-size: 50px;
+    color: #ff7a00;
+    padding-left: 20px;
+  }
+  .logistics {
+    font-size: 25px;
+    padding-top: 20px;
+    color: #003366;
+  }
+  .hero-text2 {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .hero-text1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hamburger-logo {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 110px;
+  }
+  /* contact section */
+  .contact {
+    width: 100%;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  hr {
+    display: none;
+  }
+  .contact-text {
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    padding-top: 350px;
+    padding-left: 40px;
+  }
+  .contact-text1 {
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .contact-text1 p {
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  /* map section */
+  .map-image {
+    height: 250px;
+    width: 100%;
+  }
+  /* social section */
+  .social-section {
+    display: none;
+  }
+  /* footer section */
+  .footer1 {
+    color: #a0a0a0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Saira Condensed;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0;
+  }
+  .footer1 p {
+    font-size: 15px;
+  }
+  .hr-tag {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .line-1 {
+    display: none;
+  }
+  .footer-text {
+    color: #a0a0a0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 90px;
+  }
+  .ERL1 {
+    font-size: 35px;
+    color: #ff7a00;
+    padding-top: 10px;
+  }
+  .logistics1 {
+    font-size: 15px;
+    padding-top: 30px;
+    color: #003366;
+  }
+  .footer-text1 img {
+    padding-top: 50px;
+  }
+  .footer-image {
+    height: 35px;
+  }
+  .footer-text2 {
+    padding-top: 40px;
+    line-height: 20px;
+  }
+  .text {
+    font-family: Saira Condensed;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .text1 {
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .hr-tag1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-button {
+    background-color: #a0a0a0;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    gap: 40px;
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 0.3rem;
+    border: none;
+  }
+  .footer-bottom {
+    color: #a0a0a0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-family: Saira Condensed;
+    font-weight: 500;
+    font-size: 15px;
+    padding-right: 20px;
+  }
 }
