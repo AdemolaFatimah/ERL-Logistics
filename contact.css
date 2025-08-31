@@ -89,6 +89,11 @@ body {
   font-weight: 800;
   border-radius: 0.5rem;
 }
+.btn:hover{
+  scale: 1.05;
+  color: white;
+}
+/* contact section */
 .contact-image {
   height: 800px;
   width: 100%;
@@ -118,6 +123,7 @@ body {
   font-weight: 400;
   font-size: 25px;
 }
+/* social section */
 .social-section {
   height: 170px;
   background-color: #031930;
@@ -127,6 +133,7 @@ body {
   margin-bottom: 50px;
   padding-left: 500px;
 }
+/* footer section */
 .footer {
   height: 600px;
   background-color: black;
@@ -209,6 +216,10 @@ ul {
   font-size: 15px;
   border-radius: 0.3rem;
   border: none;
+}
+.footer-button:hover{
+  scale: 1.05;
+  color: white;
 }
 .footer-bottom {
   color: #a0a0a0;

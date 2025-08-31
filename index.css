@@ -92,6 +92,10 @@ body {
   font-weight: 800;
   border-radius: 0.5rem;
 }
+.btn:hover{
+  scale: 1.05;
+  color: white;
+}
 /* hero-section */
 .hero-image {
   height: 800px;
@@ -141,6 +145,10 @@ body {
   border-radius: 0.5rem;
   margin-left: 40px;
   margin-top: 70px;
+}
+.btn-1:hover{
+  scale: 1.05;
+  color: white;
 }
 /* about section */
 .about {
@@ -211,6 +219,10 @@ body {
   border: none;
   margin-top: 40px;
   padding: 5px;
+}
+.btn-2:hover{
+  scale: 1.05;
+  color: white;
 }
 /* service section */
 .main-service {
@@ -335,6 +347,10 @@ ul {
   font-size: 15px;
   border: none;
   border-radius: 0.3rem;
+}
+.footer-button:hover{
+  scale: 1.05;
+  color: white;
 }
 .footer-bottom {
   color: #a0a0a0;
