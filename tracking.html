@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Shipment</title>
+  <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+  <div class="tracking-container">
+    <h1>Track Your Shipment</h1>
+    <p>Enter your tracking number to view your package status.</p>
+
+    <div class="tracking-box">
+      <input type="text" id="trackingNumber" placeholder="Enter Tracking Number">
+      <button onclick="trackPackage()">Track</button>
+    </div>
+
+    <div id="result" class="tracking-result">
+      <!-- Tracking info will appear here -->
+    </div>
+  </div>
+
+  <script>
+    function trackPackage() {
+      const number = document.getElementById("trackingNumber").value.trim();
+      const result = document.getElementById("result");
+
+      if (number === "") {
+        result.innerHTML = "<p class='error'>⚠️ Please enter a tracking number.</p>";
+        return;
+      }
+
+      // Simulated loading
+      result.innerHTML = "<p class='loading'>Loading tracking details...</p>";
+
+      setTimeout(() => {
+        // Simulated progress stage (you can randomize or get from API)
+        const stages = ["Picked Up", "In Transit", "Out for Delivery", "Delivered"];
+        const currentStage = Math.floor(Math.random() * stages.length);
+
+        let progressHTML = `
+          <div class="status">
+            <h2>Tracking Number: ${number}</h2>
+            <div class="progress-container">
+        `;
+
+        stages.forEach((stage, index) => {
+          progressHTML += `
+            <div class="stage ${index <= currentStage ? 'active' : ''}">
+              <div class="circle">${index + 1}</div>
+              <p>${stage}</p>
+            </div>
+          `;
+        });
+
+        progressHTML += `</div>`;
+
+        progressHTML += `
+          <p class="summary">
+            Current Status: <strong>${stages[currentStage]}</strong><br>
+            Last Location: Lagos Distribution Center<br>
+            Estimated Delivery: 8 Oct 2025
+          </p>
+          </div>
+        `;
+
+        result.innerHTML = progressHTML;
+      }, 1200);
+    }
+  </script>
+</body>
+</html>

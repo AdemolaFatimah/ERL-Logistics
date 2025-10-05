@@ -23,21 +23,33 @@
         </nav>
         <div class="nav-list1">
           <p class="button">FOLLOW US</p>
-          <img
-            src="./Images/twitter-logo-light.png"
-            alt="twitter-logo"
-            height="20px"
-          />
-          <img
-            src="./Images/facebook-logo-light.png"
-            alt="facebook-logo"
-            height="20px"
-          />
-          <img
-            src="./Images/instagram-logo-light.png"
-            alt="instagram-logo"
-            height="20px"
-          />
+          <a
+            href="https://twitter.com/i/oauth2/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URL&scope=tweet.read%20users.read%20offline.access&state=YOUR_STATE&code_challenge=YOUR_CODE_CHALLENGE&code_challenge_method=plain"
+            target="_blank"
+            ><img
+              src="./Images/twitter-logo-light.png"
+              alt="twitter-logo"
+              height="20px"
+          /></a>
+          <a
+            href="https://www.facebook.com/v19.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URL&state=YOUR_STATE"
+            target="_blank"
+            ><img
+              src="./Images/facebook-logo-light.png"
+              alt="facebook-logo"
+              height="20px"
+            />
+          </a>
+          <a
+            href="https://api.instagram.com/oauth/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URL&scope=user_profile,user_media&response_type=code"
+            target="_blank"
+          >
+            <img
+              src="./Images/instagram-logo-light.png"
+              alt="instagram-logo"
+              height="20px"
+            />
+          </a>
         </div>
       </section>
       <!-- navigation -->
@@ -57,36 +69,18 @@
           <ul class="hero-text2">
             <li class="hero-text-li"><a href="./index.html">HOME</a></li>
             <li class="hero-text-li">
-              <a href="#">SERVICES</a
-              ><img
-                class="arrow"
-                src="./Images/arrow-triangle-down.png"
-                alt="image of a triangle arrow facing down"
-                height="17px"
-              />
+              <a href="#">SERVICES</a>
             </li>
 
             <li class="hero-text-li">
-              <a href="/about.html" target="_blank">ABOUT</a
-              ><img
-                class="arrow"
-                src="./Images/arrow-triangle-down.png"
-                alt="image of a triangle arrow facing down"
-                height="17px"
-              />
+              <a href="/about.html" target="_blank">ABOUT</a>
             </li>
             <li class="hero-text-li">
-              <a href="/contact.html" target="_blank">CONTACT</a
-              ><img
-                class="arrow"
-                src="./Images/arrow-triangle-down.png"
-                alt="image of a triangle arrow facing down"
-                height="17px"
-              />
+              <a href="/contact.html" target="_blank">CONTACT</a>
             </li>
           </ul>
         </nav>
-        <button class="btn">TRACKING</button>
+        <button class="btn"><a href="/tracking.html">TRACKING</a></button>
       </div>
       <!-- hero section -->
       <div class="hero-image">
@@ -100,7 +94,12 @@
         </div>
         <div class="main-hero2">
           <button class="btn-1">Get Started</button>
-          <img src="./Images/play icons.png" alt="play-icon" height="87px" />
+          <img
+            src="./Images/play icons.png"
+            alt="play-icon"
+            height="80px"
+            style="margin-top: 50px"
+          />
           <p class="main-hero3" style="color: white">HOW IT WORKS?</p>
         </div>
       </div>
@@ -264,7 +263,7 @@
             src="./Images/Footer-email-logo.png"
             alt="image of an email-logo"
           />
-          <p>ibukun4martins@gmail.com</p>
+          <p class="footer-email">ibukun4martins@gmail.com</p>
         </div>
         <hr class="hr-tag1" />
         <div class="footer-text">
@@ -279,37 +278,39 @@
               <img src="./Images/footer-instagram.png" alt="instagram-logo" />
             </div>
           </div>
-          <div class="footer-text2">
-            <ul>
-              <li class="text">OUR SERVICES</li>
-              <li class="text1">Home</li>
-              <li class="text1">Services</li>
-              <li class="text1">About</li>
-              <li class="text1">Contact</li>
-            </ul>
-          </div>
-          <div class="footer-text2">
-            <ul>
-              <li class="text">LEGAL</li>
-              <li class="text1">Terms & Conditions</li>
-              <li class="text1">Privacy Policy</li>
-              <li class="text1">FAQs</li>
-            </ul>
-          </div>
-          <div class="footer-text2">
-            <p class="text">EXPLORE</p>
-            <p class="text1">
-              Subscribe our newsletter to get <br />
-              our latest update and news
-            </p>
-            <button class="footer-button">
-              Email Address
-              <img
-                src="./Images/footer-paper-plane.png"
-                alt="image of a paper plane"
-                height="20px"
-              />
-            </button>
+          <div class="footer-content">
+            <div class="footer-text2">
+              <ul>
+                <li class="text">OUR SERVICES</li>
+                <li class="text1">Home</li>
+                <li class="text1">Services</li>
+                <li class="text1">About</li>
+                <li class="text1">Contact</li>
+              </ul>
+            </div>
+            <div class="footer-text2">
+              <ul>
+                <li class="text">LEGAL</li>
+                <li class="text1">Terms & Conditions</li>
+                <li class="text1">Privacy Policy</li>
+                <li class="text1">FAQs</li>
+              </ul>
+            </div>
+            <div class="footer-text2">
+              <p class="text">EXPLORE</p>
+              <p class="text1">
+                Subscribe our newsletter to get <br />
+                our latest update and news
+              </p>
+              <button class="footer-button">
+                Email Address
+                <img
+                  src="./Images/footer-paper-plane.png"
+                  alt="image of a paper plane"
+                  height="20px"
+                />
+              </button>
+            </div>
           </div>
         </div>
         <hr class="hr-tag1" />
