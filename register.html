@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | ERL Logistics</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Create Account</h2>
+      <p>Register with ERL Logistics to manage and track your shipments easily.</p>
+
+      <form id="registerForm">
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+234 812 345 6789" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required />
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <p class="login-link">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Form submission simulation
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Registration successful! Welcome to ERL Logistics 🚚");
+    });
+  </script>
+</body>
+</html>

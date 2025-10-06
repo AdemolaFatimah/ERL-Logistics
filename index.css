@@ -296,6 +296,10 @@ body {
   font-size: 60px;
   line-height: 100%;
 }
+.footer-content{
+  display: flex;
+  gap: 100px;
+}
 .footer-text {
   color: #a0a0a0;
   display: flex;
@@ -623,6 +627,11 @@ ul {
 .footer-text2 {
   padding-top: 70px;
   line-height: 20px;
+}
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .text {
   font-family: Saira Condensed;
