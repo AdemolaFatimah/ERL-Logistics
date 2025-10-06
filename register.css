@@ -6,48 +6,52 @@
 }
 
 body {
-  background: linear-gradient(135deg, #1a237e, #3949ab);
-  color: #fff;
-  height: 100vh;
+  background: linear-gradient(135deg, #1a237e, #0d47a1);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 20px;
 }
 
 .form-box {
-  background: white;
-  color: #333;
+  background: #ffffff;
   border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 35px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 10px;
   color: #1a237e;
+  margin-bottom: 10px;
 }
 
 p {
-  text-align: center;
-  margin-bottom: 20px;
   color: #555;
+  margin-bottom: 25px;
 }
 
 .input-group {
-  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 18px;
 }
 
 label {
   display: block;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 input {
@@ -61,35 +65,63 @@ input {
 
 input:focus {
   border-color: #1a237e;
+  box-shadow: 0 0 5px rgba(26, 35, 126, 0.3);
 }
 
 .btn {
   width: 100%;
-  background: #1a237e;
+  background: #ff9800;
   color: white;
   border: none;
   padding: 12px;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #303f9f;
+  background: #fb8c00;
 }
 
 .login-link {
-  text-align: center;
   margin-top: 15px;
 }
 
 .login-link a {
   color: #1a237e;
-  font-weight: 500;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .login-link a:hover {
   text-decoration: underline;
+}
+
+/* Tracking number display */
+.tracking-box {
+  text-align: center;
+  background: #f3f4ff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+.tracking-box h3 {
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.tracking-number {
+  background: #1a237e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  display: inline-block;
 }

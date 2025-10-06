@@ -1,53 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register | ERL Logistics</title>
-  <link rel="stylesheet" href="register.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="form-box">
-      <h2>Create Account</h2>
-      <p>Register with ERL Logistics to manage and track your shipments easily.</p>
-
-      <form id="registerForm">
-        <div class="input-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" placeholder="Enter your full name" required />
-        </div>
-
-        <div class="input-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="Enter your email" required />
-        </div>
-
-        <div class="input-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="+234 812 345 6789" required />
-        </div>
-
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Create a password" required />
-        </div>
-
-        <button type="submit" class="btn">Register</button>
-
-        <p class="login-link">
-          Already have an account? <a href="login.html">Login here</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | ERL Logistics</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h2>Create Your Account</h2>
+        <p>
+          Register with <strong>ERL Logistics</strong> to track your deliveries
+          easily.
         </p>
-      </form>
-    </div>
-  </div>
 
-  <script>
-    // Form submission simulation
-    document.getElementById("registerForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Registration successful! Welcome to ERL Logistics 🚚");
-    });
-  </script>
-</body>
+        <form id="registerForm">
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="+234 812 345 6789"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Create a password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn">Register</button>
+
+          <p class="login-link">
+            Already have an account? <a href="login.html">Login here</a>
+          </p>
+        </form>
+
+        <!-- Tracking number display -->
+        <div id="trackingResult" class="tracking-box" style="display: none">
+          <h3>🎉 Registration Successful!</h3>
+          <p>Welcome to ERL Logistics, <span id="userName"></span>.</p>
+          <p>Your tracking number is:</p>
+          <div class="tracking-number" id="trackingNumber"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const form = document.getElementById("registerForm");
+      const trackingBox = document.getElementById("trackingResult");
+      const trackingDisplay = document.getElementById("trackingNumber");
+      const userNameDisplay = document.getElementById("userName");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get user info
+        const fullName = document.getElementById("fullname").value;
+
+        // Generate random tracking number (e.g., ERL-4583927)
+        const randomNum = Math.floor(1000000 + Math.random() * 9000000);
+        const trackingNumber = `ERL-${randomNum}`;
+
+        // Display the tracking number
+        userNameDisplay.textContent = fullName.split(" ")[0]; // show first name
+        trackingDisplay.textContent = trackingNumber;
+
+        form.style.display = "none"; // hide form
+        trackingBox.style.display = "block"; // show success box
+      });
+    </script>
+  </body>
 </html>
