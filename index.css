@@ -29,7 +29,7 @@ body {
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 5px;
+  gap: 20px;
 }
 .nav-list1 {
   display: flex;
@@ -43,6 +43,7 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
+
 /* navigation */
 .hero-text {
   display: flex;
@@ -53,6 +54,7 @@ body {
 }
 .hero-text1 {
   display: flex;
+  gap: 8px;
   font-family: "Saira Condensed", sans-serif;
 }
 .hero-text2 {
@@ -75,26 +77,27 @@ body {
 }
 .ERL {
   font-size: 50px;
-  color: #ff7a00;
+  color: #4c1010;
 }
 .logistics {
-  font-size: 25px;
-  padding-top: 20px;
+  font-size: 27px;
+  padding-top: 26px;
   color: #003366;
 }
 .btn {
   height: 50px;
-  width: 120px;
+  width: 160px;
   background-color: #ff7a00;
-  color: white;
+  color: #4c1010;
   border: none;
-  font-size: 17px;
+  font-size: 24px;
   font-weight: 800;
   border-radius: 0.5rem;
+  margin-left: 10px;
 }
 .btn a {
   text-decoration: none;
-  color: white;
+  color: #4c1010;
 }
 .btn:hover{
   scale: 1.05;
@@ -143,12 +146,14 @@ body {
 .btn-1 {
   background: #ff7a00;
   border: none;
-  color: white;
-  width: 8%;
+  color: #4c1010;
+  width: 10%;
   height: 50px;
   border-radius: 0.5rem;
   margin-left: 40px;
   margin-top: 70px;
+  font-size: 18px;
+  font-weight: bolder;
 }
 .btn-1:hover{
   scale: 1.05;
@@ -213,7 +218,7 @@ body {
   color: white;
 }
 .btn-2 {
-  background-color: #ff7a00;
+  background-color: #4c1010;
   height: 70px;
   font-family: Saira Condensed;
   font-weight: 400;
@@ -271,11 +276,11 @@ body {
 /* footer section */
 .footer {
   height: 600px;
-  background-color: black;
+  background-color: #441818;
   margin-bottom: 25px;
 }
 .footer1 {
-  color: #a0a0a0;
+  color: #d4dee8;;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -312,9 +317,9 @@ body {
   padding-top: 10px;
 }
 .logistics1 {
-  font-size: 30px;
-  padding-top: 30px;
-  color: #003366;
+  font-size: 27px;
+  padding-top: 40px;
+  color: #d4dee8;
 }
 ul {
   list-style: none;
@@ -325,16 +330,19 @@ ul {
 .footer-text2 {
   padding-top: 40px;
   line-height: 30px;
+  
 }
 .text {
   font-family: Saira Condensed;
   font-weight: 700;
   font-size: 25px;
+  color: #d4dee8;
 }
 .text1 {
   font-family: Saira Condensed;
   font-weight: 500;
   font-size: 15px;
+  color: #d4dee8;
 }
 .hr-tag1 {
   width: 90%;
@@ -361,7 +369,7 @@ ul {
   color: white;
 }
 .footer-bottom {
-  color: #a0a0a0;
+  color: #d4dee8;
   display: flex;
   justify-content: flex-end;
   gap: 15px;
