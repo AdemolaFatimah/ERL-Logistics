@@ -280,7 +280,7 @@ body {
   margin-bottom: 25px;
 }
 .footer1 {
-  color: #d4dee8;;
+  color: #d4dee8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -319,7 +319,7 @@ body {
 .logistics1 {
   font-size: 27px;
   padding-top: 40px;
-  color: #ff7a00;
+  color: #d4dee8;
 }
 ul {
   list-style: none;
@@ -391,10 +391,9 @@ ul {
     justify-content: space-between;
   }
   .ERL {
-    font-size: 50px;
-    color: #ff7a00;
-    padding-left: 20px;
-  }
+  font-size: 50px;
+  color: #4c1010;
+}
   .logistics {
     font-size: 25px;
     padding-top: 20px;
@@ -456,7 +455,7 @@ ul {
   .btn-1 {
     background: #ff7a00;
     border: none;
-    color: white;
+    color: #4c1010;
     width: 30%;
     height: 50px;
     border-radius: 0.5rem;
@@ -529,7 +528,7 @@ ul {
     color: white;
   }
   .btn-2 {
-    background-color: #ff7a00;
+    background-color: #4c1010;
     height: 40px;
     font-family: Saira Condensed;
     font-weight: 400;

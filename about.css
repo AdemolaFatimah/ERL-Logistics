@@ -73,7 +73,7 @@ body {
 }
 .ERL {
   font-size: 50px;
-  color: #ff7a00;
+  color: #4c1010;
 }
 .logistics {
   font-size: 25px;
@@ -191,11 +191,11 @@ body {
 /* footer section */
 .footer {
   height: 600px;
-  background-color: black;
+   background-color: #441818;
   margin-bottom: 25px;
 }
 .footer1 {
-  color: #a0a0a0;
+  color: #d4dee8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -230,7 +230,7 @@ body {
 .logistics1 {
   font-size: 30px;
   padding-top: 30px;
-  color: #003366;
+  color: #d4dee8;
 }
 ul {
   list-style: none;
@@ -246,11 +246,13 @@ ul {
   font-family: Saira Condensed;
   font-weight: 700;
   font-size: 25px;
+  color: #d4dee8;
 }
 .text1 {
   font-family: Saira Condensed;
   font-weight: 500;
   font-size: 15px;
+  color: #d4dee8;
 }
 .hr-tag1 {
   width: 90%;
